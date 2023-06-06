@@ -44,8 +44,8 @@ for i in threads:
     i.join()
 
 # with concurrent library
-with concurrent.futures.ThreadPoolExecutor() as executor:
-    executor.map(download, imgurls)
+# with concurrent.futures.ThreadPoolExecutor() as executor:
+#     executor.map(download, imgurls)
 
 t2 = time.perf_counter()
 print(f'finished in {t2-t1} seconds')
